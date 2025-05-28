@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* fontes */
+
+@font-face {
+    font-family: fonte st;
+    src: url(fontes/Stardew_Valley.ttf);
+}
+
+@font-face {
+    font-family: cursiva;
+    src: url(fontes/VeniceClassic.ttf);
+}
+
+@font-face {
+    font-family: mono;
+    src: url(fontes/PixelOperatorMono.ttf);
+}
+
+@font-face {
+    font-family: normal;
+    src: url(fontes/PixelOperator.ttf);
+}
+
+@font-face {
+    font-family: negrito;
+    src: url(fontes/PixelOperator-Bold.ttf);
+}
+
+@font-face {
+    font-family: teste;
+    src: url();
+}
+
+/* background principal do site */
+
+body {
+    background-image: url(imagens/background.png);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: 1900px;
+    height: 100vh;
+}
+
+body::selection {
+    background-color: #39d671;
+    color: #000000;
+}
+
+/* Primeira parte - Cabeçalho, menu e apresentação*/
+
+#primeiro-fundo {
+    position: relative;
+    height: 100vh;
+}
+
+#cabeçalho {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    
+}
+
+.titulo {
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: fonte st;
+    font-size: 25px;
+    font-weight: 150;
+    transition: 1s;
+    
+}
+.menu a:hover {
+    letter-spacing: .1em;
+}
+
+/*introdrução do site*/
+
+#bem-vindo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#bem-vindo h2 {
+    text-align: center;
+    color: #ffffff;
+    font-family: cursiva;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: 150;
+}
+
+#bem-vindo h2::first-letter {
+    font-size: 35px;
+    font-weight: 150;
+}
+
+
+
+/* Segunda parte - Os chefes*/
+
+#fundo2 {
+    background-image: url(imagens/fundo\ div\ 2.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+
+}
+
+#titulo1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #bf8556;
+    width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#titulo1 h2 {
+    text-align: center;
+    color: #ffffff;
+    font-family: cursiva;
+    letter-spacing: 2px;
+    font-weight: 150;
+}
+
+.caixa-chefes {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff3d5;
+    width: 1350px;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+
+.caixa-chefes img {
+    border: groove 5px #bf8556;
+}
+
+#alexia {
+    padding-left: 30px;
+    margin-left: 200px;
+    font-family: cursiva;
+}
+
+#thiago {
+    padding-right: 30px;
+    margin-right: 200px;
+    
+}
+
+#thiago figcaption, #alexia figcaption {
+    text-align: center;
+    padding: 5px;
+    font-family: cursiva;
+}
+
+
+
+#apresentacao {
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 13px;
+    text-align: justify;
+    font-family: mono;
+    word-spacing: -3px; /*espaço entre palavras*/
+    text-indent: 10px; /*cria paragrafo*/
+}
+
+/*PAGINA RECEITAS*/
+
+#area-principal {
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.caixa-receitas {
+    padding: 10px;
+    box-shadow: 5px 4px 5px -4px rgba(4,4,180,0.58);
+    -webkit-box-shadow: 5px 4px 5px -4px rgba(4,4,180,0.58);
+    -moz-box-shadow: 5px 4px 5px -4px rgba(4,4,180,0.58);
+}
+
+
+.cardapio {
+    padding: 10px;
+    background-color: #fff3d5;
+    
+}
+
+.cardapio-receitas {
+    border: solid 2px #bf8556;
+    padding: 20px;
+    background-color: #bf8556;
+
+}
+
+.titulo-principal {
+    font-family: negrito;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #bf8556;
+    padding: 20px;
+    border-bottom: solid 1px #fff3d5;
+}
+
+.titulo-cardapio {
+    font-family: cursiva;
+    font-weight: 100;
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    line-height: 15px;
+}
+
+#opcoes {
+    text-align: center;
+    padding: 20px;
+    background-color: #bf8556;
+}
+
+#opcoes a {
+    text-decoration: none;
+    font-family: cursiva;
+    font-size: 20px;
+    color: #ffffff;
+    border-bottom: solid 1px #fff3d5;
+    
+}
+
+/* dentro de refeições, bebidas e sobremesas*/
+
+.comidas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+
+.comidas p {
+    align-content: center;
+    display: column;
+    color: black;
+    text-align: center;
+    font-family: normal;
+    font-size: 15px;
+}
+
+
+.comidas li {
+    align-content: center; /* isso que centralizou os conteúdos dentro do quadrado*/
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: solid 1px black;
+    background-color: #fff3d5;
+    border-radius: 20px;
+    padding: 10px;
+    list-style: none;
+}
+
+
+.comidas img {
+    align-content: center;
+    margin-bottom: 10px;
+    width: 45px;
+    height: 45px;
+}
+
+
+
